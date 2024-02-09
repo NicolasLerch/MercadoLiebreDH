@@ -1,0 +1,53 @@
+body {
+    background-color: #EAC926;
+    font-family: Roboto;
+    margin: 0;
+}
+
+li a{
+    font-style: none;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+p{
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p.precio{
+    font-size: 18px;
+}
+
+p.descuento {
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    line-height: 10px;
+    background-color: white;
+}
+
+.icon{
+    line-height: 10px;
+    font-size: 2em;
+    margin-top: 2em;
+    color: #03264C;
+}
+
+.copyright{
+    text-align: left;
+}
+
+img {
+    width: 15em;
+}

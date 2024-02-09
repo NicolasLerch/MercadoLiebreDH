@@ -29,6 +29,7 @@ p.precio{
 
 p.descuento {
     font-size: 16px;
+    margin: 0;
 }
 
 footer {
@@ -50,4 +51,28 @@ footer {
 
 img {
     width: 15em;
+}
+
+.precio{
+    color: #39b54a;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+   /* align-items: center;*/
+    background-color: #ebebeb;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-bottom: 1px solid grey;
+}
+article h3 {
+    margin-top: 0;
+}
+
+.product-img{
+    /*margin-top: 1em;*/
+    /*text-align: center;*/
+    margin: 1em auto;
 }

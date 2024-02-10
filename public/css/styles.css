@@ -1,7 +1,17 @@
 body {
-    background-color: #EAC926;
     font-family: Roboto;
     margin: 0;
+}
+header {
+    background-color: #EAC926;
+}
+
+header img{
+    width: 100%;
+}
+
+.menu-icon{
+    text-align: center;
 }
 
 li a{
@@ -25,23 +35,46 @@ h2 {
 
 p.precio{
     font-size: 18px;
+    width: 20%;
+    display: inline;
 }
 
 p.descuento {
     font-size: 16px;
-    margin: 0;
+    /* margin: 0; */
+    width: 50%;
+    display: inline;
+    color: #39b54a;
+    margin-left: 1em;
 }
+
+/* .descuento{
+    text-align: left;
+    display: inline;
+} */
 
 footer {
     text-align: center;
     line-height: 10px;
     background-color: white;
+    /* font-size: 16px; */
 }
 
-.icon{
+footer h2{
+    font-size: 14px;
+    margin: 5px auto -5px auto;
+}
+
+footer .icon{
     line-height: 10px;
     font-size: 2em;
     margin-top: 2em;
+    color: #03264C;
+}
+
+.icon{
+    font-size: 2em;
+    margin-top: 1em;
     color: #03264C;
 }
 
@@ -54,25 +87,90 @@ img {
 }
 
 .precio{
-    color: #39b54a;
+    text-align: left;
+    display: inline;
+}
+
+/* .article_footer{
+    text-align: left;
+    display:inline-block;
+    background-color: #03264C;
+} */
+
+.precio, .descuento {
+    flex: 1;
+    margin: 0; /* Reset margin */
+}
+
+.image-container {
+    position: relative;
+}
+
+.article-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:white;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: left;
+    border-top: 1px solid grey;
 }
 
 article{
     display: flex;
     flex-direction: column;
    /* align-items: center;*/
-    background-color: #ebebeb;
-    text-align: left;
-    padding-left: 1em;
-    padding-right: 1em;
+    background-color: white;
+    text-align: center;
+    margin: 1em 5% 0 5%;
     border-bottom: 1px solid grey;
 }
+
 article h3 {
     margin-top: 0;
+    display: none;
 }
 
 .product-img{
     /*margin-top: 1em;*/
     /*text-align: center;*/
-    margin: 1em auto;
+    margin: 0 auto 3em auto;
+}
+
+main h2 {
+    color: grey;
+    background-color: #ebebeb;
+    margin: 0;
+    padding-top: 1em;
+}
+
+main section{
+    background-color: #ebebeb;
+    text-align: center;
+}
+
+.fa-truck{
+    position: relative;
+    float: right;
+    margin-right: 10%;
+    font-size: 1.5em;
+}
+
+section{
+    padding: 0 0 1em 0;
+}
+
+.text-container{
+    margin: 0 15% 0 15%;
+    line-height: 16px;
+}
+
+.text-container h2{
+    line-height: 32px;
+}
+
+footer p{
+    margin: 0;
 }

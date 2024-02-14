@@ -1,6 +1,7 @@
 body {
     font-family: Roboto;
     margin: 0;
+    background-color: #ebebeb;
 }
 header {
     background-color: #EAC926;
@@ -107,7 +108,7 @@ img {
 }
 
 .article-footer {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -115,7 +116,7 @@ img {
     padding: 15px;
     box-sizing: border-box;
     text-align: left;
-    border-top: 1px solid grey;
+    border-top: 1px solid #ebebeb;
 }
 
 article{
@@ -124,12 +125,12 @@ article{
    /* align-items: center;*/
     background-color: white;
     text-align: center;
-    margin: 1em 5% 0 5%;
+    margin: 10px 0 10px 0;
     border-bottom: 1px solid grey;
 }
 
 article h3 {
-    margin-top: 0;
+    margin: 0;
     display: none;
 }
 
@@ -173,4 +174,60 @@ section{
 
 footer p{
     margin: 0;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+nav{
+    display: none;
+}
+
+.menu-icon .fa-bars{
+    margin-bottom: 15px;
+}
+
+/* Adaptativo - tablet */
+@media (min-width: 361px) and (max-width: 768px){
+    article h3 {
+        margin: 0;
+        display: block;
+    }
+
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .menu-icon .fa-bars{
+        display: none;
+    }
+
+    nav{
+        display: block;
+    }
+    
+
+}
+
+/*Adaptativo - desktop*/
+@media (min-width: 769px){
+    article h3 {
+        margin: 0;
+        display: block;
+    }
+
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .menu-icon .fa-bars{
+        display: none;
+    }
+
+    nav{
+        display: block;
+    }
+
 }

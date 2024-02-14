@@ -103,9 +103,9 @@ img {
     margin: 0; /* Reset margin */
 }
 
-.image-container {
+/* .image-container {
     position: relative;
-}
+} */
 
 .article-footer {
     /* position: absolute; */
@@ -120,13 +120,16 @@ img {
 }
 
 article{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
    /* align-items: center;*/
     background-color: white;
     text-align: center;
-    margin: 10px 0 10px 0;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-bottom: 1px solid grey;
+    width: 90%;
 }
 
 article h3 {
@@ -138,6 +141,7 @@ article h3 {
     /*margin-top: 1em;*/
     /*text-align: center;*/
     margin: 0 auto 3em auto;
+    width: 100%;
 }
 
 main h2 {
@@ -160,7 +164,11 @@ main section{
 }
 
 section{
-    padding: 0 0 1em 0;
+    width: 100%;
+    /* margin: auto;
+    align-content: center; */
+    text-align: center;
+    align-content: center;
 }
 
 .text-container{

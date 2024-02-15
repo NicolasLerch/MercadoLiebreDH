@@ -1,18 +1,27 @@
+/*Media para mobile*/
+
+.nav-bar-bottom{
+    display: none;
+}
+
+.banner{
+    width: 100%;
+    margin: 0;
+}
+
+.text-header{
+    margin-bottom: 0px;
+}
+
 body {
     font-family: Roboto;
     margin: 0;
     background-color: #ebebeb;
 }
 header {
-    background-color: #EAC926;
-}
-
-header img{
-    width: 100%;
-}
-
-.menu-icon{
+    background-color: #EAC926; 
     text-align: center;
+    align-content: center;
 }
 
 li a{
@@ -193,8 +202,10 @@ nav{
     display: none;
 }
 
-.menu-icon .fa-bars{
-    margin-bottom: 15px;
+.menu-icon{
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 /* Adaptativo - tablet */
@@ -212,8 +223,9 @@ nav{
         display: none;
     }
 
-    nav{
-        display: block;
+
+    .menu-icon .fa-bars{
+        display: flex;
     }
     
 
@@ -236,6 +248,52 @@ nav{
 
     nav{
         display: block;
+    }
+    
+    header .search-bar{
+        height: 20px;
+    }
+
+    .nav-bar-top{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+        padding-top: 10px;
+        align-items: center;
+    }
+
+    .nav-bar-bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .search-bar{
+        display: flex;
+        align-items: center;
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+
+    h2.text-header {
+        text-align: right;
+    }
+
+    .left-nav-bar, .right-nav-bar{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .nav-bar-bottom ul{
+        display: flex;
+    }
+
+    .nav-bar-bottom li{
+        margin: 0 12px;
+    }
+
+    .banner{
+        width: 100%;
     }
 
 }

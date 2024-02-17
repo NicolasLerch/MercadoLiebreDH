@@ -295,6 +295,11 @@ nav{
         flex-wrap: wrap;
     }
 
+    footer section{
+        display: flex;
+        flex-direction: column;
+    }
+
     .text-header-mobile{
         display: none;
     }
@@ -402,6 +407,11 @@ nav{
     section{
         display: flex;
         justify-content: space-around;
+    }
+
+    footer section{
+        display: flex;
+        flex-direction: column;
     }
 
     .text-header-mobile{

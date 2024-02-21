@@ -16,3 +16,12 @@ app.listen(3000, () => {
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/index.html'));
 });
+
+// GET REGISTER
+app.get('/registro', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/register.html'));
+});
+
+app.post('/registro', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/index.html'));
+});

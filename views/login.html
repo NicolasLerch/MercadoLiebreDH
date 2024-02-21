@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/49746c139e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="css/login-styles.css" rel="stylesheet"/>
+    <!-- <link href="css/styles.css" rel="stylesheet"> -->
+</head>
+<body>
+    <header>
+        <div class="nav-bar-top">
+            <img src="images/logo-mercado-liebre.svg" alt="MercadoLiebre logo">       
+            <p class="text-header">
+                <i class="fa-solid fa-hand-holding-dollar"></i> 
+                Compra en cuotas y sin tarjeta de credito
+            </p>
+        </div>
+        <p class="text-header-mobile">
+            <i class="fa-solid fa-hand-holding-dollar"></i> 
+            Compra en cuotas y sin tarjeta de credito
+        </p>
+
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars icon"></i>
+        </div>
+
+        <div class="nav-bar-bottom">
+                <ul class="left-nav-bar">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="right-nav-bar">
+                    <li><a href="/registro">Crea tu cuenta</a><i class="fa-regular fa-address-card"></i></li>
+                    <li><a href="#">Ingresa</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                    <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+                </ul>
+        </div>
+    </header>
+    <main>        
+        <form action="/login" method="POST">
+            <h3>Iniciá sesión e ingresá con tu cuenta</h3>
+            <div class="login-container">
+                <label>
+                    <input type="text" name="user" placeholder="Usuario o correo electrónico">
+                </label>
+                <br>
+                <label>
+                    <input type="password" name="password" placeholder="Contraseña">
+                </label>
+            </div>
+            <div class="login-bottom">
+                <label class="recordarme">
+                    <input type="checkbox" name="recordar">Recordarme
+                </label>
+                <a href="#">¿Olvidaste tu contraseña?</a>            
+            </div>
+            <br>
+            <button type="submit">Ingresar</button>
+        </form>
+    </main>
+
+</body>
+</html>

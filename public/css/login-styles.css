@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;;
+}
+
+li a{
+    font-style: none;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/* MEDIAS MOBILE */
+
+.nav-bar-bottom{
+    display: none;
+}
+
+.text-header{
+    margin-bottom: 0px;
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;     
+    /* text-align: center; */
+    /* justify-content: space-around; */
+    /* align-content: center; */
+    /* position: fixed; Fix the header at the top */
+    top: 0;
+    /* height: 15vh; */
+    z-index: 1; /* Ensure the header is above other elements */
+    text-align: center;
+    background-color: #EAC926;
+    align-items: center;
+}
+
+.nav-bar-top{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-content: center;
+}
+
+.menu-icon{
+    font-size: 2em;
+}
+
+header img{
+    width:100%;
+    padding: 10px;
+    /* height: 100%; */
+}
+
+/* CONFIGURACION GENERAL DEL SITIO */
+
+main {
+    flex: 1; /* Take remaining vertical space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    /* border: 1px solid gray; */
+    /* width: 50%; */
+}
+
+.login-bottom{
+    text-align: center;
+    padding: 15px;;
+}
+
+.login-container input{
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+form{
+    text-align: center;
+}
+
+form h3{
+    margin-bottom: 20px;
+}
+
+form button{
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1em;
+}
+
+/* MEDIA PARA TABLETS */
+@media (min-width: 480px) and (max-width: 768px){
+
+    .nav-bar-bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text-header-mobile, .menu-icon{
+        display: none;
+    }
+    
+    /* .text-header{
+        display: flex;
+        font-size: 2vw;
+        width: 45%;
+    } */
+
+    .text-header{
+        display: flex;
+    }
+/*
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;     
+        /* text-align: center; */
+        /* justify-content: space-around; */
+        /* align-content: center; */
+        /* position: fixed; Fix the header at the top 
+        top: 0;
+        /* height: 15vh; 
+        z-index: 1; /* Ensure the header is above other elements 
+        text-align: center;
+        background-color: #EAC926;
+        align-items: center;
+    }*/
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .nav-bar-top{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    } */
+
+
+
+    .nav-bar-top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        padding-top: 10px;
+        align-items: center;
+        width: 100%; 
+    } 
+
+    .nav-bar-top img{
+        width: 45%;
+    }
+    
+    .menu-icon{
+        font-size: 2em;
+    }
+    
+    header img{
+        width:100%;
+        padding: 10px;
+        /* height: 100%; */
+    }
+
+}

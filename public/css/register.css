@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body{
+    margin:0;
+}
+
+header{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #EAC926;    
+}
+
+header img{
+    height: 100%;
+    margin: 10px auto;
+    width: 50%;
+}
+
+/* MOBILE MAIN */
+@media (max-width: 1024px) {
+    body{
+        /* background-color: blue; */
+        text-align: center;
+        background-color: #ebebeb;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    form input {
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        height: 25px;
+        margin: 10px auto;
+    }
+
+    .intereses{
+        display: flex;
+        flex-direction: column;
+        align-content: left;
+        /* justify-content: flex-start; */
+        text-align: left;
+    }
+
+    .intereses input{
+        width: auto;
+        margin-bottom: 0;
+        padding-top: 10px;
+        height: auto;
+    }
+
+    .compraventa{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .compraventa input{
+        width: auto;
+        height: auto;
+        margin: auto 2px;
+    }
+
+    .compraventa label{
+        margin: auto 5px;
+    }
+
+    /* .profile-img{
+        display: flex;
+    }
+
+    .profile-pic{
+        border: 1px solid black;
+        border-radius: 50%;
+        width: 100px;
+        height: 50px;
+        margin-right: 20px;
+    } */
+
+    .profile-pic {
+        display: flex;
+        align-items: center; /* Align items vertically */
+    }
+    
+    .profile-pic label {
+        margin-right: 20px; /* Add margin between label and input */
+        width: 70%;
+    }
+    
+    .profile-pic input[type="file"] {
+        flex: 1; /* Take remaining space */
+        /* max-width: calc(100% - 120px); Adjust width to accommodate the circle and margin */
+    }
+    
+    .profile-pic .profile-pic-circle {
+        border: 1px solid black;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        /* width: 50%; */
+        /* order: -1; */
+    }
+
+    /* BOTONES */
+    form button{
+        padding: 15px;
+        width: 85px;
+        border-radius: 5px;
+        border: none;
+        margin: 10px;
+        color: white;
+    }
+
+    .submitButton{
+        background-color: blue;
+    }
+
+    .cancelButton{
+        background-color: grey;
+    }
+    
+} 

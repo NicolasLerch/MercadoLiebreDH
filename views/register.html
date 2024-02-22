@@ -3,75 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
+    <link href="css/register.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="/registro" method="POST">
-        <p>
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="name">
-        </p>
-        <p>
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-        </p>
-        <p>
-            <label>Correo: 
-                <input type="mail" name="email" placeholder="ejemplo@mail.com">
-            </label>
-        </p>
-        <p>
-            <label>Nacimiento: 
-                <input type="date" name="birth">
-            </label>
-        </p>
-        <p>
-            <label>Domicilio: 
-                <input type="text" name="domicilio" placeholder="Calle 123">
-            </label>
-        </p>
-        <p>
-            <p>Compra o venta de productos</p>
-            <p><label><input type="radio" name="compra-venta" value="compra"> Compra</label></p>
-            <p><label><input type="radio" name="compra-venta" value="venta"> Venta</label></p>
-        </p>
-        <p>Categorias de interes:
-            <br>
-            <label>
-                <input type="checkbox" name="intereses" value="electro"> Electro
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" name="intereses" value="moda"> Moda
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" name="intereses" value="hogar"> Hogar
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" name="intereses" value="jugueteria"> Jugueteria
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" name="intereses" value="vidaSana"> Vida Sana
-            </label> 
-        </p>
-        <label> Cargar foto de perfil:
-            <input type="file" name="profilePic">
-        </label>
-        <p>
-            <label> Contraseña
-                <input type="password" name="password">
-            </label>
-        </p>
-        <p>
-            <label>Repetir contraseña
-                <input type="password" name="confirmPassword">
-            </label>
-        </p>
-        <button type="submit">Enviar</button>
-        <button type="reset">Cancelar</button>
-    </form>
+    <header>
+            <img src="images/logo-mercado-liebre.svg" alt="MercadoLiebre logo">
+    </header>
+    <main>
+        <h2>Crear nuevo usuario</h2>
+        <form action="/registro" method="POST">
+            <p>
+                <label for="nombre"></label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="apellido"></label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+            </p>
+            <p>
+                <label>
+                    <input type="mail" name="email" placeholder="Correo electrónico" required>
+                </label>
+            </p>
+            <p>
+                <label>Fecha de nacimiento:<br>
+                    <input type="date" name="birth" required>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="text" name="domicilio" placeholder="Domicilio" required>
+                </label>
+            </p>
+            <p>
+                <p>Desea comprar o vender productos?</p>
+                <div class="compraventa">                    
+                    <label><input type="radio" name="compra-venta" value="compra"> Compra</label>
+                    <label><input type="radio" name="compra-venta" value="venta"> Venta</label>
+                </div>
+            </p>
+            <p>
+                <div class="intereses">
+                    <p>Categorias de interes:</p>
+                    <label>
+                        <input type="checkbox" name="intereses" value="electro"> Electro
+                    </label>
+                    <label>
+                        <input type="checkbox" name="intereses" value="moda"> Moda
+                    </label>
+                    <label>
+                        <input type="checkbox" name="intereses" value="hogar"> Hogar
+                    </label>
+                    <label>
+                        <input type="checkbox" name="intereses" value="jugueteria"> Jugueteria
+                    </label>
+                    <label>
+                        <input type="checkbox" name="intereses" value="vidaSana"> Vida Sana
+                    </label>
+                </div>
+            </p>
+            <div class="profile-pic">
+                <div class="profile-pic-circle"></div>
+                <label> Cargar foto de perfil:
+                    <input type="file" name="profilePic">
+                </label>
+            </div>
+            
+            <p>
+                <label>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="password" name="confirmPassword" placeholder="Repetir contraseña" required>
+                </label>
+            </p>
+            <button class="submitButton" type="submit">Enviar</button>
+            <button class="cancelButton" type="reset">Cancelar</button>
+        </form>
+    </main>
 </body>
 </html>

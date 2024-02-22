@@ -26,6 +26,11 @@ app.post('/registro', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/index.html'));
 });
 
+
+app.post('/login', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/index.html'));
+});
+
 app.get('/login', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/login.html'));
 });

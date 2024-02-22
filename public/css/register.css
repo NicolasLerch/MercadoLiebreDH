@@ -4,7 +4,9 @@
 }
 
 body{
+    /* display: flex; */
     margin:0;
+    background-color: #ebebeb;
 }
 
 header{
@@ -13,7 +15,8 @@ header{
     text-align: center;
     width: 100%;
     height: auto;
-    background-color: #EAC926;    
+    background-color: #EAC926;
+    margin-bottom: 20px;
 }
 
 header img{
@@ -22,12 +25,110 @@ header img{
     width: 50%;
 }
 
+
+main {
+    display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+    align-items: center;
+    /* align-items: center; */
+    width: 100%;
+    margin: auto;
+    margin-left: 5%;
+    /* align-items: flex-start; */
+}
+
+.register-img{
+    width: 50%;
+    text-align: center;
+}
+
+.register-img img{
+    width: 80%;
+}
+
+
+form{
+    padding: 20px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 7px;
+    width: 50%;
+}
+
+form input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    margin: 10px auto;
+    box-shadow: 4px 4px 6px grey;
+}
+
+.intereses{
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    /* justify-content: flex-start; */
+    text-align: left;
+}
+
+.intereses input{
+    width: auto;
+    margin-bottom: 0;
+    padding-top: 10px;
+    height: auto;
+    box-shadow: none;
+}
+
+.compraventa{
+    display: flex;
+    flex-direction: row;
+}
+
+.compraventa input{
+    width: auto;
+    height: auto;
+    margin: auto 2px;
+    box-shadow: none;
+}
+
+.profile-pic input{
+    box-shadow: none;
+}
+
+/* BOTONES */
+form button{
+    padding: 15px;
+    width: 85px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    color: white;
+}
+
+.submitButton{
+    background-color: blue;
+}
+
+.cancelButton{
+    background-color: grey;
+}
+
+
+
 /* MOBILE MAIN */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
+
+    .register-img{
+        display: none;
+    }
+
     body{
         /* background-color: blue; */
         text-align: center;
         background-color: #ebebeb;
+        text-align: center;
     }
 
     main {
@@ -35,7 +136,12 @@ header img{
         flex-direction: column;
         align-items: center;
         width: 90%;
-        margin: auto;
+        margin-left: 7%;
+    }
+
+    form{
+        width: 80%;
+        margin:0;
     }
 
     form input {
@@ -76,18 +182,6 @@ header img{
         margin: auto 5px;
     }
 
-    /* .profile-img{
-        display: flex;
-    }
-
-    .profile-pic{
-        border: 1px solid black;
-        border-radius: 50%;
-        width: 100px;
-        height: 50px;
-        margin-right: 20px;
-    } */
-
     .profile-pic {
         display: flex;
         align-items: center; /* Align items vertically */
@@ -113,22 +207,6 @@ header img{
         /* order: -1; */
     }
 
-    /* BOTONES */
-    form button{
-        padding: 15px;
-        width: 85px;
-        border-radius: 5px;
-        border: none;
-        margin: 10px;
-        color: white;
-    }
 
-    .submitButton{
-        background-color: blue;
-    }
-
-    .cancelButton{
-        background-color: grey;
-    }
     
 } 
